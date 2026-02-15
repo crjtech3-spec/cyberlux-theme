@@ -1,22 +1,33 @@
-# Theme settings reference
+# Theme settings — merchant-focused reference
 
-This file documents the top-level `config/settings_schema.json` groups and where to find them in the Theme Editor.
+This page explains the main Theme settings you will use as a store admin. Settings are grouped in the Theme Editor under `Theme settings`.
 
-## Top-level categories
-- `Favicon & Logo` — logo, favicon, and logo sizing.
-- `Typography` — heading, body and accent font/presets and sizes.
-- `Design System` — global design preset, spacing, radius, shadow.
-- `Colors` — curated palettes and manual color overrides.
-- `Layout & Spacing` — page width, grid spacing, border and line options.
-- `Header & Navigation` — header layout, menu behavior, sticky header.
-- `Footer` — footer columns, newsletter, social links.
-- `Product & Cart` — product gallery, PDP layout, cart drawer/page.
-- `Checkout & Password` — password page settings and gift card behaviour.
-- `Accessibility & Performance` — skip links, screen-reader helpers, lazy-loading toggles.
+## Key settings and where to find them
+- Favicon & Logo
+  - Change site logo and favicon. Logo width slider controls header sizing.
+- Colors
+  - Choose a color palette (preset) or select `Custom` and edit individual colors.
+  - Important colors: `Solid Button Background`, `Solid Button Label`, `Text`, `Background`.
+- Typography
+  - Heading and body fonts, base sizes and line heights.
+  - Use Typography to adjust global legibility quickly.
+- Layout & Spacing
+  - `Page width` influences content max-width; `Grid spacing` controls card gutters.
+- Header & Navigation
+  - Toggle sticky header, enable announcement bar, configure menus.
+- Footer
+  - Configure footer columns, newsletter block, and social links.
+- Product & Cart
+  - PDP gallery layout (carousel / stacked), enable `sticky-add-to-cart` and `cart-drawer`.
 
-## Where to edit
-Open `Online Store > Themes > Customize` then select `Theme settings` in the left sidebar.
+## Common merchant tasks (how to change these settings)
+- Make CTAs more prominent: `Theme settings > Colors` → increase contrast for `Solid Button Background`.
+- Change the site type scale: `Theme settings > Typography > Base Size`.
+- Reduce whitespace: `Theme settings > Layout & Spacing > Grid spacing`.
 
-## Developer notes
-- `theme_info` (in `settings_schema.json`) includes `theme_documentation_url` and `theme_support_url` that link to this documentation and to the issue tracker.
-- Keep `theme_author` and `theme_version` intact — they are used by Shopify Theme Store metadata.
+## Where to get help
+If you need a developer to modify advanced settings (custom Liquid, global JS), contact support: `cyberluxbycrj@gmail.com`.
+
+---
+
+For per-setting IDs and advanced admin guidance, see the top of the Theme Editor where each field label is self-explanatory. If you want an exported setting-id list for integration with migration tools, ask and I will generate it.
